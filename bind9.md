@@ -31,6 +31,9 @@ www	IN	CNAME	dominio.es.
 ```
 
 - Queremos añadir un registro MX para el correo de dominio.es.
+```
+@	IN	MX	10	dominio.es.
+```
 
 # Peculiaridades
 
