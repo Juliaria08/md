@@ -14,7 +14,7 @@ zone "dominio.es" IN {
 };
 ```
 Luego copia /etc/bind/db.empty a la nueva carpeta /etc/bind/zones/dominio.es.zone
-en el archivo /etc/bind/zones/dominio.es.zone remplaza localhost con dominio.es
+en el archivo /etc/bind/zones/dominio.es.zone remplaza localhost con el nombre del dominio
 
 # Poner entradas DNS
 Usos:
@@ -27,7 +27,7 @@ git	IN	A	10.0.4.253
 
 - Queremos añadir un registro CNAME para www.dominio.es que apunte a lo mismo que dominio.es
 ```
-www	IN	CNAME	dominio.es.
+www.dominio.es.	IN	CNAME	dominio.es.
 ```
 
 - Queremos añadir un registro MX para el correo de dominio.es.
