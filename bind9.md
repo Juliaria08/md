@@ -20,9 +20,9 @@ en el archivo /etc/bind/zones/dominio.es.zone remplaza localhost con el nombre d
 Usos:
 
 
-- Queremos añadir a el dominio.es el registro "label=google-ok ok-maps ok-events ok"
+- Queremos añadir a el dominio.es el registro txt "DNS for dominio.es"
 ```
-@	IN	TXT	"dominio.es.	IN	TXT	"label=google-ok ok-maps ok-events ok"
+@	IN	TXT	"DNS for dominio.es"
 
 ```
 
