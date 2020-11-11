@@ -1,0 +1,16 @@
+#+TITLE: Git
+#+AUTHOR: Julian Marcos
+
+* Que es Git
+Git es un control de versiones un programa que te permite versionar los cambios en un proyecto y te permite obtener un archivo guardado del pasado y puedes crear ramificaciones.
+** Add
+Te permite añadir archivos al area de staging.
+** Commit
+Te permite crear una version con el contenido del area de staging
+** Remotes
+Te permiten subir el codigo a un repositorio por ejemplo ( codeberg.org ).
+O puedes tener el repositorio privado y el mundo no lo puede ver.
+** Ramas
+Te permite ramificar tu proyecto
+** Gource
+Es un programa externo que te permite ver una representacion grafica de lo que pasa en un repositorio de git o otro svn
