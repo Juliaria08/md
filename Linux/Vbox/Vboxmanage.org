@@ -1,0 +1,27 @@
+#+TITLE: Vboxmanage
+
+* Vboxmanage
+** List Virtual Machines
+#+begin_src shell
+VBoxManage list vms
+#+end_src
+** Startvm
+#+begin_src shell
+VBoxManage startvm $VMID --type headless
+#+end_src
+** Pause
+#+begin_src shell
+VBoxManage controlvm $VMID pause
+#+end_src
+** Resume
+#+begin_src shell
+VBoxManage controlvm $VMID resume
+#+end_src
+** Reset AKA=reboot
+#+begin_src shell
+VBoxManage controlvm $VMID reset
+#+end_src
+** Poweroff
+#+begin_src shell
+VBoxManage controlvm $VMID poweroff
+#+end_src
