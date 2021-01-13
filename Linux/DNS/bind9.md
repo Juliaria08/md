@@ -16,7 +16,10 @@ zone "dominio.es" IN {
 Luego copia /etc/bind/db.empty a la nueva carpeta /etc/bind/zones/dominio.es.zone
 en el archivo /etc/bind/zones/dominio.es.zone remplaza localhost con el nombre del dominio
 
-# Poner entradas DNS
+## Notas
+Tienes que ir subiendo la entrada llamada `serial` para ir incrementando las versiones
+
+## Poner entradas DNS
 Usos:
 
 
@@ -41,11 +44,11 @@ www.dominio.es.	IN	CNAME	dominio.es.
 @	IN	MX	10	dominio.es.
 ```
 
-# Peculiaridades
+## Peculiaridades
 
 - **El archivo necesita tabs**
 
-- Tienes que restartear bind9 para que coja la nueva config.
+- Tienes que restartear bind9 para que coja la nueva config. ( Si quieres forcar un reload de los archivos si as modificado el serial no seria necesario con un reload bastaria. )
 
 - El @ es como el fqdn del dominio.
 
